@@ -6,6 +6,7 @@ import OutlinedCard from "../commponant/Card";
 import AboutMe from "../commponant/AboutMe";
 import WovenImageList from "../commponant/projectes";
 import Footar from "../commponant/Footar";
+import Contact from "../commponant/contact";
 // import CardContent from "@mui/material/CardContent";
 // import Button from "@mui/material/Button";
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
       <OutlinedCard />
       <AboutMe />
       <WovenImageList />
+      <Contact />
       <Footar />
     </>
   );
