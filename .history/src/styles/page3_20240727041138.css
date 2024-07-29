@@ -1,0 +1,93 @@
+.lightPoint {
+    position: absolute;
+    left: 60%;
+    top: 45%;
+    transform: translateX(-50%);
+    width: 400px;
+    height: 400px;
+    background-color: #f05326;
+    filter: blur(70px);
+    border-radius: 50%;
+    opacity: 0.3;
+    z-index: 84448;
+}
+
+.shape1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ff6600;
+    clip-path: ellipse(67% 100% at 8% 50%);
+    transform: translateX(-20%);
+    z-index: 1;
+}
+
+.shape2 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #ff6600;
+    clip-path: ellipse(67% 100% at 8% 50%);
+    z-index: 1;
+    transform: rotate(180deg) translateX(-20%);
+}
+
+
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes page3Card {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0%);
+        opacity: 1;
+    }
+}
+
+.left-section {
+    animation: slideInFromLeft 1.5s forwards;
+}
+
+.right-section {
+    animation: slideInFromRight 1.5s forwards;
+}
+
+.page3Card1 {
+    animation: page3Card 1s forwards;
+}
+.page3Card2 {
+    animation: page3Card 1.5s forwards;
+}
+.page3Card3 {
+    animation: page3Card 2s forwards;
+}

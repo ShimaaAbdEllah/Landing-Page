@@ -1,0 +1,91 @@
+.shape3 {
+    position: absolute;
+    top: 66%;
+    width: 500px;
+    height: 500px;
+    background-color: #F05326;
+    border-radius: 50%;
+    left: 0%;
+    transform: translateX(-50%);
+}
+
+.shape4 {
+    position: absolute;
+    top: 66%;
+    width: 500px;
+    height: 500px;
+    background-color: #F05326;
+    border-radius: 50%;
+    right: 0;
+    transform: translateX(50%);
+}
+
+@keyframes slideInFromLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes leftText1 {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes slideInFromRight {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+@keyframes middleSection {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.left-section {
+    animation: slideInFromLeft 1.5s forwards;
+}
+
+.right-section {
+    animation: slideInFromRight 2.5s forwards;
+}
+
+.middleSection {
+    animation: middleSection 2s forwards;
+}
+.leftText1 {
+    animation: leftText1 2s forwards;
+}
+.leftText2 {
+    animation: leftText1 1s forwards;
+}
+.rightText1 {
+    animation: leftText1 1s forwards;
+}
+

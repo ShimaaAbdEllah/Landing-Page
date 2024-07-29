@@ -1,0 +1,43 @@
+#about {
+  overflow: hidden;
+  position: relative;
+  /* height: 120vh; */
+}
+
+.blur {
+  position: absolute;
+  top: 45%;
+  left: 60%;
+  transform: translateX(-50%);
+  width: 400px;
+  height: 400px;
+  background-color: #f05326;
+  filter: blur(70px);
+  border-radius: 50%;
+  opacity: 0.3;
+  z-index: 84448;
+}
+
+.shape1 {
+  position: absolute;
+  /* top: 10; */
+  bottom: 45%;
+  width: 80vw;
+  height: 150vh;
+  background-color: #f05326;
+  border-radius: 50%;
+  left: 0%;
+  transform: translateX(-70%);
+  z-index: 55;
+}
+
+.shape2 {
+  position: absolute;
+  top: 10;
+  width: 80vw;
+  height: 150vh;
+  background-color: #f05326;
+  border-radius: 50%;
+  right: 0;
+  transform: translateX(70%);
+}
